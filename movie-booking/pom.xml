@@ -11,7 +11,7 @@
         <relativePath>../pom.xml</relativePath> <!-- Path to parent pom -->
     </parent>
 
-    <artifactId>parking-lot</artifactId>
+    <artifactId>movie-booking</artifactId>
     <packaging>jar</packaging>
 
     <dependencies>

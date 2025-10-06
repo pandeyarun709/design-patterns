@@ -2,13 +2,24 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="interview_BE" />
+      </profile>
+      <profile name="Annotation profile for interview_be" enabled="true">
+        <sourceOutputDir name="../movie-booking/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../movie-booking/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.32/lombok-1.18.32.jar" />
+        </processorPath>
+        <module name="parking-lot" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="18" />
+    <bytecodeTargetLevel target="18">
+      <module name="parking-lot (1)" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>
